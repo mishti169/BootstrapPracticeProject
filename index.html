@@ -14,10 +14,11 @@
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 		<title>Bootstrap Practice Template</title>
 	</head>
-	<body>
-		<div>
+	<body class='d-flex gap-5 flex-column'>
+	
 			<div class="bg-dark">
 				<div class="mx-auto col-9"">
 					<div class="d-flex pt-3 pb-5 justify-content-between">
@@ -56,16 +57,9 @@
 										>Blog</a
 									>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Action</a></li>
+										<li><a class="dropdown-item" href="#">Blog Home</a></li>
 										<li>
-											<a class="dropdown-item" href="#">Another action</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</li>
-										<li><hr class="dropdown-divider" /></li>
-										<li>
-											<a class="dropdown-item" href="#">Separated link</a>
+											<a class="dropdown-item" href="#">Blog Post</a>
 										</li>
 									</ul>
 								</li>
@@ -79,16 +73,9 @@
 										>Portfolio</a
 									>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Action</a></li>
+										<li><a class="dropdown-item" href="#">Portfolio Overview</a></li>
 										<li>
-											<a class="dropdown-item" href="#">Another action</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</li>
-										<li><hr class="dropdown-divider" /></li>
-										<li>
-											<a class="dropdown-item" href="#">Separated link</a>
+											<a class="dropdown-item" href="#">Portfolio Item</a>
 										</li>
 									</ul>
 								</li>
@@ -126,6 +113,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="d-flex col-9 gap-3 mx-auto pt-5">
 				<div class="col-4 h2 fw-bold">
 					A better way to start building.
@@ -242,7 +230,7 @@
 					<span class="fw-bolder d-flex justify-content-center fs-2"
 						>From our blog</span
 					>
-					<p class="text-muted lead fw-normal d-flex justify-content-center">
+					<p class="text-muted lead fw-normal col-6 text-center mx-auto">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
 						fugit ratione dicta mollitia. Officiis ad.
 					</p>
@@ -314,7 +302,7 @@
 								</div>
 								<div class="">
 									<h6 class="fw-bold m-0">Josiah Barclay</h6>
-									<small class="fw-normal text-mute">
+									<small class="fw-normal text-muted">
 										March 23, 2021 · 4 min read
 									</small>
 								</div>
@@ -363,7 +351,32 @@
 				</div>
 			</div>
 
+			<div class='bg-primary d-flex col-9 mx-auto rounded p-5'>
+				<div class='d-flex flex-column col-7 text-start'>
+					<div class=' fs-3 fw-bold text-white '>New products, delivered to you.</div>
+					<div class='text-white-50'>Sign up for our newsletter for the latest updates.</div>
+				</div>
+				<div class='d-flex flex-column col-5'>
+					<div class="input-group mb-2 border-white">
+						<input type="email" class="form-control" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-addon2">
+						<button class="btn text-white border-white btn-outline-secondary" type="button" id="button-addon2">Sign up</button>
+					</div>
+					<small class='text-white-50'>We care about privacy, and will never share your data.</small>
+				</div>				
+			</div>
 			
+			<footer class='bg-dark  text-white py-4 mt-5'>
+					<div class='col-9 d-flex mx-auto justify-content-between'>
+						<small class="">Copyright &copy Your Website 2021</small>
+					<small class='d-flex gap-2'>
+						<a href='www.google.com ' class='text-white'>Privacy</a> 
+						<span class=''>.</span>
+						<a href='www.google.com' class='text-white'>Terms</a> 
+						<span>.</span>
+						<a href='www.google.com' class='text-white'>Contact</a>
+					</small>
+					</div>
+			</footer>
 		</div>
 	</body>
 </html>
