@@ -20,70 +20,61 @@
 	<body class='d-flex gap-5 flex-column'>
 	
 			<div class="bg-dark">
-				<div class="mx-auto col-9"">
-					<div class="d-flex pt-3 pb-5 justify-content-between">
-						<h5 class="d-flex text-white align-items-center mb-0">
-							Start bootstrap
-						</h5>
-						<div class="">
-							<ul class="nav">
-								<li class="nav-item">
-									<a
-										class="nav-link active text-muted"
-										aria-current="page"
-										href="#"
-										>Home</a
-									>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link text-muted" href="#">About</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link text-muted" href="#">Contact</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link text-muted" href="#">Pricing</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link text-muted" href="#">FAQ</a>
-								</li>
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle text-muted"
-										data-bs-toggle="dropdown"
-										href="#"
-										role="button"
-										aria-expanded="false"
-										>Blog</a
-									>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Blog Home</a></li>
-										<li>
-											<a class="dropdown-item" href="#">Blog Post</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle text-muted px-0"
-										data-bs-toggle="dropdown"
-										href="#"
-										role="button"
-										aria-expanded="false"
-										>Portfolio</a
-									>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Portfolio Overview</a></li>
-										<li>
-											<a class="dropdown-item" href="#">Portfolio Item</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
+				<div class="mx-auto col-9">
+					<div class="d-flex pt-3 pb-5 justify-content-between">						 
+	  				<nav class="navbar navbar-dark bg-dark navbar-expand-lg  bg-light fixed-top">
+							<div class="container-fluid col-9 px-0">
+								<a class="navbar-brand" href="#">Start bootstrap</a>
+								<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+									<div class="offcanvas-header">
+										<button type="button" class="btn-close text-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+									</div>
+									<div class="offcanvas-body">
+										<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+											<li class="nav-item">
+												<a class="nav-link active text-muted" aria-current="page" href="#">Home</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link active text-muted" href="#">About</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link active text-muted" aria-current="page" href="#">Contact</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link active text-muted" aria-current="page" href="#">Pricing </a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link active text-muted" aria-current="page" href="#">FAQ</a>
+											</li>
+											<li class="nav-item dropdown">
+												<a class="nav-link dropdown-toggle text-muted" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+													Blog
+												</a>
+												<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+													<li><a class="dropdown-item" href="#">Blog Home</a></li>
+													<li><a class="dropdown-item" href="#">Blog Post</a></li>
+												</ul>
+											</li>
+											<li class="nav-item dropdown">
+												<a class="nav-link dropdown-toggle text-muted" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+													Portfolio
+												</a>
+												<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+													<li><a class="dropdown-item" href="#">Portfolio Overview</a></li>
+													<li><a class="dropdown-item" href="#">Portfolio Item</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</nav>
 					</div>
-					<div class="row justify-content-between pt-5 pb-3">
-						<div class="col-7">
+					<div class="row justify-content-between pt-5 pb-3  ">
+						<div class="col-md-7">
 							<h1 class="text-white display-5 fw-bold">
 								A Bootstrap 5 template for modern businesses
 							</h1>
@@ -92,7 +83,7 @@
 								Bootstrap, the world’s most popular front-end open source
 								toolkit!
 							</p>
-							<div class="d-flex gap-4 mb-5">
+							<div class="d-flex gap-4 mb-5 flex-column flex-md-row">
 								<button type="button" class="btn btn-primary btn-lg">
 									Get Started
 								</button>
@@ -101,11 +92,11 @@
 								</button>
 							</div>
 						</div>
-						<div class="col-5">
+						<div class="col-12 col-md-5">
 							<figure class="figure d-flex justify-content-end">
 								<img
 									src="https://dummyimage.com/600x400/343a40/6c757d"
-									class="figure-img rounded img-fluid"
+									class="figure-img rounded img-fluid "
 									alt="..."
 								/>
 							</figure>
@@ -114,12 +105,12 @@
 				</div>
 			</div>
 
-			<div class="d-flex col-9 gap-3 mx-auto pt-5 flex-sm-column">
-				<div class="col-4 h2 fw-bold">
+			<div class="d-flex col-md-9 gap-5 mx-auto pt-5 flex-column flex-md-row">
+				<div class="col-md-4 col-9 text-md-start h2 fw-bold  text-md-center mx-auto">
 					A better way to start building.
 				</div>
 				<div class="col d-flex flex-column gap-5">
-					<div>
+					<div class='col-9 col-md-12  mx-auto'>
 						<div
 							class="
 								material-icons
@@ -133,13 +124,13 @@
 						>
 							laptop
 						</div>
-						<div class="my-3 fs-5 fw-bold">Featured title</div>
-						<p class="">
+						<div class="my-3 fs-5 fw-bold text-start">Featured title</div>
+						<p class="text-start">
 							Paragraph of text beneath the heading to explain the heading. Here
 							is just a bit more text.
 						</p>
 					</div>
-					<div>
+					<div class='col-9 col-md-12   mx-auto'>
 						<div
 							class="
 								material-icons
@@ -153,15 +144,15 @@
 						>
 							laptop
 						</div>
-						<div class="my-3 fs-5 fw-bold">Featured title</div>
-						<p class="">
+						<div class="my-3 fs-5 fw-bold text-start">Featured title</div>
+						<p class="text-start">
 							Paragraph of text beneath the heading to explain the heading. Here
 							is just a bit more text.
 						</p>
 					</div>
 				</div>
-				<div class="col d-flex flex-column gap-5">
-					<div>
+				<div class="col d-flex flex-column gap-5 ">
+					<div class='col-9 col-md-12  mx-auto'>
 						<div
 							class="
 								material-icons
@@ -175,13 +166,13 @@
 						>
 							laptop
 						</div>
-						<div class="my-3 fs-5 fw-bold">Featured title</div>
-						<p class="">
+						<div class="my-3 fs-5 fw-bold text-start">Featured title</div>
+						<p class="text-start">
 							Paragraph of text beneath the heading to explain the heading. Here
 							is just a bit more text.
 						</p>
 					</div>
-					<div>
+					<div class='col-9 col-md-12  mx-auto'>
 						<div
 							class="
 								material-icons
@@ -195,8 +186,8 @@
 						>
 							laptop
 						</div>
-						<div class="my-3 fs-5 fw-bold">Featured title</div>
-						<p class="">
+						<div class="my-3 fs-5 fw-bold text-start">Featured title</div>
+						<p class="text-start">
 							Paragraph of text beneath the heading to explain the heading. Here
 							is just a bit more text.
 						</p>
@@ -206,7 +197,7 @@
 
 			<div class="bg-light py-5">
 				<div class="d-flex text-center flex-column">
-					<p class="col-5 align-self-center fs-4 my-5 fst-italic">
+					<p class="col-md-5 col-10 align-self-center fs-4 my-5 fst-italic">
 						"Working with Start Bootstrap templates has saved me tons of
 						development time when building new projects! Starting with a
 						Bootstrap template just makes things easier!"
@@ -230,19 +221,19 @@
 					<span class="fw-bolder d-flex justify-content-center fs-2"
 						>From our blog</span
 					>
-					<p class="text-muted lead fw-normal col-6 text-center mx-auto">
+					<p class="text-muted lead fw-normal col-md-6 text-center mx-auto">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
 						fugit ratione dicta mollitia. Officiis ad.
 					</p>
 				</div>
-				<div class="d-flex justify-content-between gap-5">
+				<div class="d-flex flex-column flex-lg-row justify-content-between gap-md-4">
 					<div class="card col p-0 my-5 shadow gap-2">
 						<img
 							src="https://dummyimage.com/600x350/ced4da/6c757d"
 							class="card-img-top card-img-bottom"
 							alt="blank"
 						/>
-						<div class="card-body d-flex flex-column justify-content-between">
+						<div class="card-body d-flex flex-column justify-content-between gap-3">
 							<div>
 								<div>
 									<span class="badge rounded-pill bg-primary ms-0 my-2"
@@ -263,10 +254,10 @@
 										alt="blank"
 									/>
 								</div>
-								<div class="">
+								<div>
 									<h6 class="fw-bold m-0">Kelly Rowan</h6>
-									<small class="fw-normal text-muted ">
-										March 12, 2021 . 6 min ago read
+									<small class="fw-normal text-muted">
+										March 12, 2021.6 min read
 									</small>
 								</div>
 							</div>
@@ -278,7 +269,7 @@
 							class="card-img-top card-img-bottom"
 							alt="blank"
 						/>
-						<div class="card-body d-flex flex-column justify-content-between">
+						<div class="card-body d-flex flex-column justify-content-between gap-3">
 							<div>
 								<div>
 									<span class="badge rounded-pill bg-primary ms-0 my-2"
@@ -300,7 +291,7 @@
 										alt="blank"
 									/>
 								</div>
-								<div class="">
+								<div>
 									<h6 class="fw-bold m-0">Josiah Barclay</h6>
 									<small class="fw-normal text-muted">
 										March 23, 2021 · 4 min read
@@ -315,7 +306,7 @@
 							class="card-img-top card-img-bottom"
 							alt="blank"
 						/>
-						<div class="card-body d-flex flex-column justify-content-between">
+						<div class="card-body d-flex flex-column justify-content-between gap-2">
 							<div>
 								<div>
 									<span class="badge rounded-pill bg-primary ms-0 my-2"
@@ -351,12 +342,12 @@
 				</div>
 			</div>
 
-			<div class='bg-primary d-flex col-9 mx-auto rounded p-5'>
-				<div class='d-flex flex-column col-7 text-start'>
+			<div class='d-flex flex-column flex-lg-row gap-4 gap-lg-0 bg-primary col-9 mx-auto rounded p-3 text-center'> 
+				<div class='d-flex flex-column col-lg-7 text-center'>
 					<div class=' fs-3 fw-bold text-white '>New products, delivered to you.</div>
 					<div class='text-white-50'>Sign up for our newsletter for the latest updates.</div>
 				</div>
-				<div class='d-flex flex-column col-5'>
+				<div class='d-flex flex-column col-lg-5'>
 					<div class="input-group mb-2 border-white">
 						<input type="email" class="form-control" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-addon2">
 						<button class="btn text-white border-white btn-outline-secondary" type="button" id="button-addon2">Sign up</button>
@@ -366,7 +357,7 @@
 			</div>
 			
 			<footer class='bg-dark  text-white py-4 mt-5'>
-					<div class='col-9 d-flex mx-auto justify-content-between'>
+					<div class='col-9 d-flex flex-column flex-md-row align-items-center mx-auto justify-content-md-between gap-3 '>
 						<small class="">Copyright &copy Your Website 2021</small>
 					<small class='d-flex gap-2'>
 						<a href='www.google.com ' class='text-white'>Privacy</a> 
